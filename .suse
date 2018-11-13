@@ -1,10 +1,9 @@
-
-
 # Copyright 2017 Intel Corporation
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
-
+# You may obtain a copy of the License at
+#
 #     http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
@@ -17,27 +16,25 @@
 #
 # Sawtooth -- Settings Transaction Processor Configuration
 #
-
 [about]
+NewUserLink = "http://129.108.7.2/connect/tmp.i8c8RuVAwv"
 Title = "Code Smell Family Configuration"
-NewUserLink="#"
+
+[vote_setting]
+proposal_active_days = 5
+approval_treshold = 3
 
 [code_smells.class]
-LargeClass=500
-SmallClass=100
-GodClass=5
-InappropriateIntimacy=2
-[code_smells.method]
-LargeMethod=250
-SmallMethod=10
-LargeParameterList=4
-[code_smells.comments]
-CommentsToCodeRationLower=0.2
-CommentsToCodeRationUpper=0.1
+LargeClass = 500
+GodClass = 5
+SmallClass = 100
+InappropriateIntimacy = 2
 
-#vote settings
-#proposal_active_days indicates the time that users have to cast their vote
-#approval_treshold refers to the value of require votes to approve a proposal
-[vote_setting]
-proposal_active_days=5
-approval_treshold=3
+[code_smells.comments]
+CommentsToCodeRationUpper = 0.1
+CommentsToCodeRationLower = 0.2
+
+[code_smells.method]
+LargeMethod = 250
+LargeParameterList = 4
+SmallMethod = 10
